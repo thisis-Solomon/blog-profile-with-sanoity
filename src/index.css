@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+/* HEADER STYLES */
+
+header {
+    background: linear-gradient(to left top, #000, #fff);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    margin: 0rem 6rem;
+}
+
+.logo {
+    width: 20%;
+    margin-left: 2rem;
+}
+
+nav {
+    width: 50%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0rem 3rem;
+}
+
+nav ul {
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    margin-right: 3rem;
+}
+
+ul li a {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.7rem;
+}
+
+ul li a:hover {
+    color: white;
+    background: linear-gradient(to bottom right, #07006d9a, #a8b1bc5b);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Landing Page Styles */
+
+.landing-page{
+    min-height: 90vh;
+    background: linear-gradient(to right top, #000, #fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.glass {
+    min-height: 80vh;
+    background-color: darkcyan;
+    width: 60%;
+    border-radius: 0.8rem;
+    background: linear-gradient(
+        to left bottom,
+        rgba(40, 178, 202, 0.8),
+        rgba(109, 183, 185, 0.1)
+    );
+    z-index: 99;
+    backdrop-filter: blur(2rem);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.glass h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 84px;
+
+    color: #000000;
+}
+
+.glass h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 48px;
+    color: #090170;
+}
+
+.btn-links {
+    width: 50%;
+    margin: 4rem 0rem;
+}
+
+.my-works,
+.hire-me {
+    width: 232px;
+    height: 78px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 54px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 4rem 1rem;
+}
+.my-works {
+    background: #090170;
+    color: #e5e5e5;
+}
+
+.hire-me {
+    background: #a8b1bc;
+    color: #292836;
+}
+
+.hire-me:hover,
+.my-works:hover {
+    background: linear-gradient(to right top, #000, #fff);
+
+    color: #fff;
+    cursor: pointer;
+}
+
+.circle-1,
+.circle-2 {
+    background-color: #fff;
+    background: linear-gradient(to left bottom, #07006d9a, #a8b1bc5b);
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.circle-1 {
+    top: 7%;
+    right: 10%;
+}
+
+.circle-2 {
+    bottom: 1%;
+    left: 10%;
+}
+
+/* About Page Style */
+
+.about-page{
+    width: 80%;
+    height: 100vh;
+    margin:  2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.about-img{
+    width: 30%;
+    height: 50vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-info{
+    width: 65%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-info h1, p{
+    margin: 1rem 2rem;
+}
+
+.about-info h1{
+    border-bottom: .3rem solid black;
+    display: inline-block;
+}
+
+.js{
+    color: yellow;
+}
+
+.nodejs{
+    color: green;
+
+}
+
+.mongodb{
+    color: green;
+
+}
+
+.expressjs{
+    color: red;
+}
+
+.reactjs{
+    color: skyblue;
+
+}
+
+.react-native{
+    color: skyblue;
+}
+
+.html{
+    color: red;
+}
+
+.css{
+    color: blue;
+}
