@@ -24,8 +24,6 @@ const Post = () => {
             .catch(console.error);
     }, []);
 
-    // console.log(postData)
-
     return (
         <main className='bg-yellow-300 min-h-screen p-12'>
             <section className='container mx-auto'>
