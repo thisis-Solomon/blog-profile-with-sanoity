@@ -7,7 +7,7 @@ const Projects = () => {
     useEffect(() => {
         sanityClient
             .fetch(
-                `*[_type == project]{
+                `*[_type == "project"]{
             title, 
             date,
             place,
@@ -29,7 +29,7 @@ const Projects = () => {
                 <h2 className='text-lg text-gray-800 flex justify-center mb-12'>
                     Thank you!! you have reached my project page.
                 </h2>
-                <section className='grid grind-cols-2 grip-gap-8'>
+                <section className='grid grid-cols-2 gap-8'>
                     {projectData &&
                         projectData.map((project, i) => (
                             <article className='relative rounded-lg shadow-xl bg-yellow-200 p-16'>
@@ -51,8 +51,8 @@ const Projects = () => {
                                         :{" "}
                                         {
                                             new Date(
-                                                project.date.tolocalDateString()
-                                            )
+                                                project.date
+                                            ).toLocaleDateString()
                                         }
                                     </span>
                                     <span>
