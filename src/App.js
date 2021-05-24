@@ -1,9 +1,4 @@
-import {
-    BrowserRouter,
-    BrowserRouter as Router,
-    Route,
-    Switch,
-} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
@@ -13,7 +8,9 @@ import SinglePost from "./components/SinglePost";
 const App = () => {
     return (
         <BrowserRouter>
-            <NavBar />
+            <Switch>
+                <NavBar />
+            </Switch>
             <Switch>
                 <Route path='/' component={Home} exact />
                 <Route path='/about' component={About} />

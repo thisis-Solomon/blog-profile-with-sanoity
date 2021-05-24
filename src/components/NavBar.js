@@ -56,8 +56,8 @@ const NavBar = () => {
                         style={{ height: 35, width: 35 }}
                     />
                     <SocialIcon
-                        url='https://linkedin.com/jaketrent'
-                        className={['mr-4', style.navBar]}
+                        url='https://linkedin.com/'
+                        className={["mr-4", style.navBar]}
                         target='_blank'
                         fgColor='#fff'
                         style={{ height: 35, width: 35 }}
