@@ -3,61 +3,67 @@ import { SocialIcon } from "react-social-icons";
 
 const NavBar = () => {
     const style = {
-        navBar: "inline-flex items-center py-3 px-3 my-6 rounded text-2xl items-center text-blue-600 hover:text-blue-900",
+        navBar: "inline-flex items-center py-1 my-2 px-3 rounded text-2xl items-center text-blue-600 hover:text-blue-900",
         activeLink: "text-blue-900 bg-blue-100",
+        socailIconSpaces: "mx-3 my-2",
     };
     return (
-        <header className='bg-blue-200'>
-            <div className='container mx-auto flex justify-between '>
-                <nav className='flex'>
-                    <NavLink
-                        to='/'
-                        exact
-                        activeClassName='text-black'
-                        className='inline-flex items-center py-6 px-3 mr-4 text-blue-600 hover:text-blue-900 text-4xl font-bold cursive tracking-widest'
-                    >
-                        My Name
-                    </NavLink>
-                    <NavLink
-                        to='about'
-                        className={style.navBar}
-                        activeClassName={style.activeLink}
-                    >
-                        About Me
-                    </NavLink>
-                    <NavLink
-                        to='project'
-                        className={style.navBar}
-                        activeClassName={style.activeLink}
-                    >
-                        Projects
-                    </NavLink>
-                    <NavLink
-                        to='post'
-                        className={style.navBar}
-                        activeClassName={style.activeLink}
-                    >
-                        Blog Posts
-                    </NavLink>
+        <header className='bg-blue-200 flex justify-center align-center flex-col'>
+            <div className='container mx-auto px-4  md:flex md:justify-between'>
+                <nav className='lg:flex lg:justify-between md:flex md:justify-center md:items-center md:gap-10'>
+                    <div className='flex justify-center '>
+                        <NavLink
+                            to='/'
+                            exact
+                            activeClassName='text-black'
+                            className='inline-flex items-center justify-between  pt-4 px-3 text-blue-600 hover:text-blue-900 text-4xl font-bold cursive tracking-widest md:py-4'
+                        >
+                            My Name
+                        </NavLink>
+                    </div>
+
+                    <div className='flex justify-center flex-wrap'>
+                        <NavLink
+                            to='about'
+                            className={style.navBar}
+                            activeClassName={style.activeLink}
+                        >
+                            About Me
+                        </NavLink>
+                        <NavLink
+                            to='project'
+                            className={style.navBar}
+                            activeClassName={style.activeLink}
+                        >
+                            Projects
+                        </NavLink>
+                        <NavLink
+                            to='post'
+                            className={style.navBar}
+                            activeClassName={style.activeLink}
+                        >
+                            Blog Posts
+                        </NavLink>
+                    </div>
                 </nav>
-                <div>
+                <div className='flex justify-center md:flex-col md:my-2 md:gap-3 lg:flex-row'>
                     <SocialIcon
                         url='https://twitter.com/'
-                        className='mr-4'
+                        className={style.socailIconSpaces}
                         target='_blank'
                         fgColor='#fff'
                         style={{ height: 35, width: 35 }}
                     />
                     <SocialIcon
                         url='https://facebook.com/'
-                        className='mr-4'
+                        className={style.socailIconSpaces}
                         target='_blank'
                         fgColor='#fff'
                         style={{ height: 35, width: 35 }}
                     />
                     <SocialIcon
                         url='https://linkedin.com/'
-                        className={["mr-4", style.navBar]}
+                        className={style.socailIconSpaces}
                         target='_blank'
                         fgColor='#fff'
                         style={{ height: 35, width: 35 }}

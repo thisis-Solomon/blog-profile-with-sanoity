@@ -27,9 +27,9 @@ const Post = () => {
     return (
         <main className='bg-yellow-300 min-h-screen p-12'>
             <section className='container mx-auto'>
-                <h1 className='text-5xl flex justify-center '>Blog's Page</h1>
-                <h2 className='text-lg flex justify-center mb-12 text-gray-600'>
-                    welcome to my page blog posts
+                <h1 className='text-5xl flex justify-center '>Blog Page</h1>
+                <h2 className='text-lg flex justify-center text-center mb-12 text-gray-600'>
+                    welcome to my blog posts, hoping you'll learn something.
                 </h2>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {postData &&
