@@ -20,6 +20,14 @@ export default {
             type: "text",
         },
         {
+            name: "mainImage",
+            title: "Main image",
+            type: "image",
+            options: {
+                hotspot: true,
+            },
+        },
+        {
             name: "projectType",
             title: "project type",
             type: "string",
@@ -31,31 +39,31 @@ export default {
                         title: "Personal",
                     },
                     {
-                        value: "cliet",
+                        value: "client",
                         title: "Client",
                     },
                     {
-                        value: "church",
-                        title: "Church",
+                        value: "organisation",
+                        title: "Organisation",
                     },
                 ],
             },
         },
         {
             name: "link",
-            type: "url"
+            type: "url",
         },
         {
             name: "tags",
             type: "array",
             of: [
                 {
-                    type: "string"
-                }
+                    type: "string",
+                },
             ],
             options: {
-                layout: "tags"
-            }
-        }
+                layout: "tags",
+            },
+        },
     ],
 };

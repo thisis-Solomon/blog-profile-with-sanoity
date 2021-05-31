@@ -36,11 +36,11 @@ const SinglePost = () => {
     console.log(singlePost);
     // if (!singlePost) return <div>Loading...</div>;
     return (
-        <main className='bg-yellow-300 min-h-screen p12'>
-            <article className='container mx-auto rounded-lg shadow-xl bg-yellow-200'>
+        <main className='bg-indigo-300 min-h-screen p-4'>
+            <article className='container mx-auto rounded-lg shadow-xl bg-indigo-200'>
                 <header className='relative'>
                     <div className='absolute h-full w-full flex items-center justify-center p-8'>
-                        <div className='bg-yellow-200 bg-opacity-75 rounded p-12'>
+                        <div className='bg-indigo-200 bg-opacity-75 rounded p-12'>
                             <h1 className='text-3xl lg:text-6xl mb-4'>
                                 {singlePost.title}
                             </h1>
@@ -63,7 +63,7 @@ const SinglePost = () => {
                         style={{ height: "500px" }}
                     />
                 </header>
-                <div className='px-16 lg:px48 py-12 lg:py-20 prose lg:prose-xl max-w-full'>
+                <div className='px-8 lg:px-48 py-8 leading-3 lg:py-8 prose lg:prose-xl max-w-full'>
                     <BlockContent
                         blocks={singlePost.body}
                         projectId='lejqf7b5'

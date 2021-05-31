@@ -3,12 +3,12 @@ import { SocialIcon } from "react-social-icons";
 
 const NavBar = () => {
     const style = {
-        navBar: "inline-flex items-center py-1 my-2 px-3 rounded text-2xl items-center text-blue-600 hover:text-blue-900",
-        activeLink: "text-blue-900 bg-blue-100",
+        navBar: "inline-flex items-center py-1 my-2 px-3 rounded text-2xl items-center text-indigo-50 hover:text-indigo-900",
+        activeLink: "text-indigo-900 bg-indigo-100",
         socailIconSpaces: "mx-3 my-2",
     };
     return (
-        <header className='bg-blue-200 flex justify-center align-center flex-col'>
+        <header className='bg-indigo-500 flex justify-center align-center flex-col'>
             <div className='container mx-auto px-4  md:flex md:justify-between'>
                 <nav className='lg:flex lg:justify-between md:flex md:justify-center md:items-center md:gap-10'>
                     <div className='flex justify-center '>
@@ -16,7 +16,7 @@ const NavBar = () => {
                             to='/'
                             exact
                             activeClassName='text-black'
-                            className='inline-flex items-center justify-between  pt-4 px-3 text-blue-600 hover:text-blue-900 text-4xl font-bold cursive tracking-widest md:py-4'
+                            className='inline-flex items-center justify-between  pt-4 px-3 hover:text-indigo-100 text-4xl font-bold cursive tracking-widest md:py-4'
                         >
                             My Name
                         </NavLink>
