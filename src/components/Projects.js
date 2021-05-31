@@ -34,14 +34,14 @@ const Projects = () => {
             .catch(console.error);
     }, []);
 
-    console.log(projectData);
-
     return (
         <main className='bg-indigo-300 min-h-screen p12'>
             <section className='container mx-auto'>
-                <h1 className='flex justify-center text-7xl pt-5'>Projects</h1>
+                <h1 className='flex justify-center text-6xl md:text-7xl pt-5'>
+                    Our Works
+                </h1>
                 <h2 className='text-lg text-gray-800 flex justify-center mb-12 text-center mx-2 md:mx-none'>
-                    Thank you!! you have reached our projects page.
+                    Thank you!! you have reached our work page.
                 </h2>
                 <section className='flex flex-col w-11/12 mx-auto pb-5 md:grid md:grid-cols-2 gap-4 md:gap-8'>
                     {projectData &&
@@ -94,7 +94,7 @@ const Projects = () => {
                                         </a>
                                     </h3>
                                     <div className='text-gray-800 text-xs space-x4 '>
-                                        <p className='my-6 text-gray-700 leading-relaxed'>
+                                        <p className='my-6 text-gray-900 text-2xl leading-relaxed'>
                                             {project.description}
                                         </p>
                                     </div>

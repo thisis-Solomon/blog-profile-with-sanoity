@@ -24,6 +24,13 @@ const Post = () => {
             .catch(console.error);
     }, []);
 
+    if (postData.length === 0)
+    return (
+        <div className='min-h-screen px-10 text-center bg-indigo-400 flex justify-center items-center'>
+            <h1 className="text-5xl">Your Blog post is empty</h1>
+        </div>
+    );
+
     return (
         <main className='bg-indigo-300 min-h-screen p-12'>
             <section className='container mx-auto'>

@@ -33,8 +33,7 @@ const SinglePost = () => {
             .then((data) => setSinglePost(data[0]))
             .catch(console.error);
     }, [slug]);
-    console.log(singlePost);
-    // if (!singlePost) return <div>Loading...</div>;
+
     return (
         <main className='bg-indigo-300 min-h-screen p-4'>
             <article className='container mx-auto rounded-lg shadow-xl bg-indigo-200'>
@@ -63,7 +62,7 @@ const SinglePost = () => {
                         style={{ height: "500px" }}
                     />
                 </header>
-                <div className='px-8 lg:px-48 py-8 leading-3 lg:py-8 prose lg:prose-xl max-w-full'>
+                <div className='px-8 lg:px-48 py-8 leading-7 lg:py-8 prose lg:prose-xl max-w-full'>
                     <BlockContent
                         blocks={singlePost.body}
                         projectId='lejqf7b5'

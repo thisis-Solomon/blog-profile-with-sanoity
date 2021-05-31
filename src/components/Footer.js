@@ -6,7 +6,7 @@ const Footer = () => {
         socailIconSpaces: "mx-3 my-2",
     };
     return (
-        <footer className='bg-indigo-200 md:absolute w-full bottom-11/12'>
+        <footer className='bg-indigo-800 text-indigo-50 md:absolute w-full bottom-11/12'>
             <div className='container mx-auto px-4 p-4'>
                 <div className='flex flex-col justify-center mx-7 items-center md:flex-row md:justify-between'>
                     <div className='flex items-center flex-col md:flex-row'>
